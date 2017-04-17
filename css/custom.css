@@ -1,0 +1,99 @@
+/*fonts */
+
+@font-face {
+    font-family: gteesti;
+    src: url(../fonts/GTEestiProText-Light.otf);
+}
+
+@font-face {
+    font-family: gteesti-italic;
+    src: url(../fonts/GTEestiProText-LightItalic.otf);
+}
+
+@font-face {
+	font-family: canela;
+    src: url(../fonts/Canela-Light.otf);
+}
+
+body {
+	margin-top: 5rem;
+	font-family: gteesti, helvetica, sans-serif;
+	font-size: 4rem;
+	line-height: 5rem;
+}
+
+h1 {
+	font-family: canela, times, serif;
+	font-size: 3.9rem;
+	line-height: 5rem;
+	letter-spacing: 0.1rem;
+	padding: 15rem 0 0;
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: 5rem;
+}
+
+.p-first {
+	margin-top: 5rem;
+}
+
+a {
+	font-family: canela, times, serif;
+	font-size: 3.9rem;
+	line-height: 5rem;
+	letter-spacing: 0.1rem;
+	color: black;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+    margin: 0 0 10rem 0;
+    padding: 0;
+}    
+
+li {
+	margin-bottom: 0;
+}
+
+hr {
+	border-width: 0.2rem;
+	border-style: solid;
+	border-color: black;
+	margin-top: 30rem;
+	margin-bottom: 10rem;
+}
+
+.p-italic {
+	font-family: gteesti-italic;
+}
+
+.container {
+  max-width: 1300px;
+}
+.contact-info{
+	margin-top: 5rem;
+	padding-bottom: 20rem;
+}
+
+.p-img{
+	height: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;	
+}
+
+.u-full-width {
+	margin: 30rem 0;
+}
+
+.grid-img {
+		margin: 30rem 0;
+}
+
+.arrow {
+	height: 3rem;
+	position: fixed;
+}
+
