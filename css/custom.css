@@ -35,8 +35,9 @@ p {
 	margin-bottom: 5rem;
 }
 
-.p-first {
-	margin-top: 5rem;
+footer p {
+		margin-bottom: 0rem;
+
 }
 
 a {
@@ -46,6 +47,11 @@ a {
 	letter-spacing: 0.1rem;
 	color: black;
 	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #ff6699;
 }
 
 ul {
@@ -63,7 +69,27 @@ hr {
 	border-style: solid;
 	border-color: black;
 	margin-top: 30rem;
-	margin-bottom: 10rem;
+	margin-bottom: 2rem;
+}
+
+img {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+.p-img {
+	height: 3rem;
+	padding: 0 1rem;	
+}
+
+.img-section {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.img-section img {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
 
 .p-italic {
@@ -73,27 +99,186 @@ hr {
 .container {
   max-width: 1300px;
 }
-.contact-info{
+.contact-info {
 	margin-top: 5rem;
 	padding-bottom: 20rem;
-}
-
-.p-img{
-	height: 3rem;
-	padding-left: 1rem;
-	padding-right: 1rem;	
 }
 
 .u-full-width {
 	margin: 30rem 0;
 }
 
-.grid-img {
-		margin: 30rem 0;
-}
-
 .arrow {
 	height: 3rem;
 	position: fixed;
+	padding: 0;
+	z-index: 1000;
 }
+
+
+
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+	body, h1, a {
+		font-size: 3.5rem;
+		line-height: 4.5rem;
+	}
+	
+	.arrow{
+		height: ;
+	}
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+		body, h1, a {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+	
+	p {
+	margin-bottom: 2.8rem;
+}
+
+	.p-img {
+		height: 2rem;
+}
+	
+	.arrow{
+		height: 2rem;
+	}
+}
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	body, h1, a {
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+	
+	p {
+	margin-bottom: 2.8rem;
+}
+
+	.p-img {
+		height: 2rem;
+}
+	
+	.arrow{
+		height: 2rem;
+	}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body, h1, a {
+		font-size: 2.7rem;
+		line-height: 3.5rem;
+	}
+	
+	body {
+	margin-top: 3rem;
+	}
+
+	h1 {
+		padding-top: 5rem;
+	}
+		
+	p {
+	margin-bottom: 3.7rem;
+}
+
+	ul {
+		margin-bottom: 3rem;
+	}
+	
+		img {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+}
+
+	.img-section {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+	.contact-info {
+		margin-top: 3rem;
+		padding-bottom: 10rem;
+}
+	
+	.p-img {
+		height: 1.8rem;
+}
+	
+	.arrow{
+		height: 1.9rem;
+	}
+	
+	hr {
+	border-width: 0.1rem;
+	margin-top: 15rem;
+	margin-bottom: 1rem;
+}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	body, h1, a {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	
+	body {
+	margin-top: 3rem;
+	}
+	
+	h1 {
+		padding-top: 5rem;
+	}
+	
+	p {
+		margin-bottom: 3rem;
+}
+
+	ul {
+		margin-bottom: 3rem;
+	}
+	
+	img {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+}
+
+	.img-section {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+	.contact-info {
+	margin-top: 3rem;
+	padding-bottom: 10rem;
+}
+
+	.p-img {
+	height: 1.7rem;
+}
+	
+	.arrow{
+		height: 1.7rem;
+	}
+	
+	hr {
+	border-width: 0.1rem;
+	margin-top: 15rem;
+	margin-bottom: 1rem;
+}	
+	
+}
+
 
