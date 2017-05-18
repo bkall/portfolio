@@ -1,13 +1,18 @@
 /*fonts */
 
 @font-face {
-    font-family: gteesti;
+    font-family: gteesti-light;
     src: url(../fonts/GTEestiProText-Light.otf);
 }
 
 @font-face {
-    font-family: gteesti-italic;
+    font-family: gteesti-light-italic;
     src: url(../fonts/GTEestiProText-LightItalic.otf);
+}
+
+@font-face {
+    font-family: gteesti-regular;
+    src: url(../fonts/GTEestiProText-Regular.otf);
 }
 
 @font-face {
@@ -17,7 +22,7 @@
 
 body {
 	margin-top: 5rem;
-	font-family: gteesti, helvetica, sans-serif;
+	font-family: gteesti-light, helvetica, sans-serif;
 	font-size: 4rem;
 	line-height: 5rem;
 }
@@ -29,7 +34,7 @@ h1, a {
 }
 
 h1 {
-	padding: 15rem 0 0;
+	padding: 10rem 0 0;
 	margin-bottom: 0;
 }
 
@@ -47,32 +52,47 @@ p {
 	margin-bottom: 5rem;
 }
 
-footer p {
-		margin-bottom: 0rem;
-
-}
-
 ul {
 	list-style-type: none;
-    margin: 0 0 10rem 0;
     padding: 0;
-	font-family: gteesti, helvetica, sans-serif;
+}
+
+li {
+	margin-bottom: 1.3rem;
+	padding-left: 4.6rem;
+	text-indent: -4.6rem;
+}
+
+li:before {
+	content: "—";
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+.list-group p {
+	margin-bottom: 0rem;
+}
+
+.list-group  ul {
+	margin-bottom: 3rem;
+}
+
+.list-group  li {
+	margin-bottom: 0rem;
 }
 
 span {
 	font-family: canela, times, serif;
 }    
 
-li {
-	margin-bottom: 0;
-}
-
 hr {
 	border-width: 0.2rem;
 	border-style: solid;
 	border-color: black;
-	margin-top: 30rem;
-	margin-bottom: 2rem;
+	margin-top: 20rem;
+	margin-bottom: 3rem;
 }
 
 img {
@@ -96,7 +116,7 @@ img {
 }
 
 .p-italic {
-	font-family: gteesti-italic;
+	font-family: gteesti-light-italic;
 }
 
 .container {
@@ -124,22 +144,81 @@ img {
 	fill: #ff6699
 }
 
+footer {
+	margin-top: 20rem;
+	border-top: 0.4rem solid black;
+	border-bottom: none;
+}
 
+footer p {
+		margin-bottom: 0rem;
+}
+
+footer li {
+	margin-bottom: 0;
+}
+
+footer hr {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 0rem;
+	margin-bottom: 3rem;
+}
+
+footer .about-space-below {
+	margin-bottom: 3rem;
+}
+
+#footer {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+
+/* For YSDN2017
+================================================== */
+.table {
+	margin: 20rem 0;
+	border-bottom: 0.4rem solid black;
+}
+
+.table h1 {
+	padding: 0;
+}
+
+.table .list-optical-align {
+	padding-left: 4.6rem;
+}
+
+.table p {
+	margin-bottom: 0;
+}
+
+.table ul {
+	margin-bottom: 0;
+}
+
+.table .row {
+	padding: 3rem 0;
+	border-bottom: 0.1rem solid black;
+}
+
+.table .row:last-child {
+	border-bottom: 0px;
+}
+
+.table .table-titles-min {
+	display: none;
+}
+	
+#p-exec {
+	margin-bottom: 3rem;
+}
 
 
 /* #Media Queries
 ================================================== */
-
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
-	body {
-		line-height: 4.5rem;
-	}
-	
-	h1, a {
-		font-size: 3.5rem;	
-	}
-}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -155,6 +234,7 @@ img {
 	
 	h1 {
 		padding-top: 10rem;
+		line-height: 3.8rem;
 	}
 	
 	p {
@@ -165,54 +245,74 @@ img {
 		height: 2rem;
 	}
 	
-	#arrow{
-		height: 2rem;
+	.img-section {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	
+	li {
+		padding-left: 3.6rem;
+		text-indent: -3.6rem;
+	}
+	
+	.list-group p {
+		margin-bottom: 0rem;
+	}
+	
+	.list-group ul {
+		margin-bottom: 2rem;
+	}
+	
+	.list-group li {
+		margin-bottom: 0rem;
+	}
+	
+	#arrow {
+		height: 2.2rem;
+	}
+	
+	hr {
+		margin-top: 20rem;
+	}
+	
+	footer .about-space-below {
+		margin-bottom: 2.5rem;
+	}
+	
+	/* For YSDN2017 */
+	.table {
+		margin: 10rem 0;
+	}
+	
+	.table .list-optical-align {
+		padding-left: 3.6rem;
+	}
+	
+	.table .row {
+		padding: 2.5rem 0;
+	}
+		
+	#p-exec {
+		margin-bottom: 2rem;
 	}
 }
 
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-	body {
-		font-size: 3rem;
-		line-height: 4rem;
-	}
-	
-	h1, a {
-		font-size: 2.9rem;
-		letter-spacing: 0.05rem;
-	}
-	
-	.title {
-		padding-top: 10rem;
-	}
-	
-	p {
-		margin-bottom: 2.8rem;
-	}
-
-	.p-img {
-		height: 2rem;
-	}
-	
-	#arrow{
-		height: 2rem;
-	}
-}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	body {
 		margin-top: 3rem;
-		font-size: 2.7rem;
-		line-height: 3.5rem;
+		font-size: 2.5rem;
+		line-height: 3.4rem;
 	}
 	
 	h1 {
 		padding-top: 5rem;
+		line-height: 3.6rem;
 	}
 	
 	h1, a {
-		font-size: 2.6rem;
+		font-size: 2.45rem;
 		letter-spacing: 0.05rem;
 	}
 		
@@ -222,6 +322,23 @@ img {
 
 	ul {
 		margin-bottom: 3rem;
+	}
+	
+	li {
+		padding-left: 3.07rem;
+		text-indent: -3.07rem;
+	}
+	
+	.list-group p {
+		margin-bottom: 0rem;
+	}
+	
+	.list-group ul {
+		margin-bottom: 1.5rem;
+	}
+	
+	.list-group li {
+		margin-bottom: 0rem;
 	}
 	
 	img {
@@ -252,7 +369,46 @@ img {
 		margin-top: 15rem;
 		margin-bottom: 1rem;
 	}
+	
+	footer .about-space-below {
+		margin-bottom: 2.3rem;
+	}
+	
+	/* For YSDN2017 */
+	.table {
+		margin: 10rem 0;
+	}
+	
+	.table .list-optical-align {
+		padding-left: 3.07rem;
+	}
+	
+	.table .row {
+		padding: 2.3rem 0;
+	}
+	
+	.table .row .five p {
+		margin-bottom: 1.3rem;
+	}
+	
+	#p-exec {
+		margin-bottom: 1.5rem;
+	}
 }
+
+
+/* Show and hide table column headings at single-column break point */
+@media only screen and (max-width: 599px) {
+	.table .table-titles-full {
+		display: none;
+	}
+	
+	.table .table-titles-min {
+		display: inherit;
+	}
+
+}
+
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
@@ -264,6 +420,8 @@ img {
 	
 	h1 {
 		padding-top: 5rem;
+		line-height: 2.9rem;	
+
 	}
 	
 	h1, a {
@@ -279,9 +437,27 @@ img {
 		margin-bottom: 3rem;
 	}
 	
+	li {
+		padding-left: 2.5rem;
+		text-indent: -2.5rem;
+		margin-bottom: 1rem;
+	}
+	
 	img {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
+	}
+	
+	.list-group p {
+		margin-bottom: 0rem;
+	}
+	
+	.list-group ul {
+		margin-bottom: 1.5rem;
+	}
+	
+	.list-group li {
+		margin-bottom: 0rem;
 	}
 
 	.img-section {
@@ -306,7 +482,32 @@ img {
 		border-width: 0.1rem;
 		margin-top: 15rem;
 		margin-bottom: 1rem;
-	}	
+	}
+	
+	footer .about-space-below {
+		margin-bottom: 2rem;
+	}
+
+	/* For YSDN2017 */
+	.table {
+		margin: 12rem 0;
+	}
+	
+	.table .list-optical-align {
+		padding-left: 0rem;
+	}
+	
+	.table .row {
+		padding: 2rem 0;
+	}
+	
+	.table .row .five p {
+		margin-bottom: 1rem;
+	}
+	
+	#p-exec {
+		margin-bottom: 1.5rem;
+	}
 }
 
 
