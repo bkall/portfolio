@@ -70,6 +70,15 @@ p {
 	font-family: gteesti-light-italic;
 }
 
+.caption {
+	font-family: gteesti-regular;
+	font-size: 1.7rem;
+	line-height: 2.1rem;
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 5rem;
+}
+
 ul {
 	list-style-type: none;
     padding: 0;
