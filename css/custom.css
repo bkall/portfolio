@@ -25,9 +25,15 @@ body {
 	font-family: gteesti-light, helvetica, sans-serif;
 	font-size: 4rem;
 	line-height: 5rem;
+	color: black;
+
 }
 
-h1, a {
+.container {
+  max-width: 1300px;
+}
+
+h1, h2, h3, a {
 	font-family: canela, times, serif;
 	font-size: 3.9rem;
 	letter-spacing: 0.05rem;
@@ -36,6 +42,10 @@ h1, a {
 h1 {
 	padding: 10rem 0 0;
 	margin-bottom: 0;
+}
+
+h2 {
+	margin-bottom: 3rem;
 }
 
 a {
@@ -50,6 +60,14 @@ a:hover {
 
 p {
 	margin-bottom: 5rem;
+}
+
+#p-space-below {
+	margin-bottom: 3rem;
+}
+
+.p-italic {
+	font-family: gteesti-light-italic;
 }
 
 ul {
@@ -115,13 +133,6 @@ img {
 	padding-bottom: 1rem;
 }
 
-.p-italic {
-	font-family: gteesti-light-italic;
-}
-
-.container {
-  max-width: 1300px;
-}
 .contact-info {
 	margin-top: 5rem;
 	padding-bottom: 20rem;
@@ -176,7 +187,7 @@ footer .about-space-below {
 }
 
 
-/* For YSDN2017
+/* Tables
 ================================================== */
 .table {
 	margin: 20rem 0;
@@ -212,9 +223,6 @@ footer .about-space-below {
 	display: none;
 }
 	
-#p-exec {
-	margin-bottom: 3rem;
-}
 
 
 /* #Media Queries
@@ -227,7 +235,7 @@ footer .about-space-below {
 		line-height: 3.8rem;
 	}
 
-	h1, a {
+	h1, h2, a {
 		font-size: 2.9rem;
 		letter-spacing: 0.05rem;
 	}
@@ -237,8 +245,16 @@ footer .about-space-below {
 		line-height: 3.8rem;
 	}
 	
+	h2 {
+		margin-bottom: 2rem;
+	}
+	
 	p {
 		margin-bottom: 2.8rem;
+	}
+	
+	#p-space-below {
+		margin-bottom: 2rem;
 	}
 
 	.p-img {
@@ -279,7 +295,7 @@ footer .about-space-below {
 		margin-bottom: 2.5rem;
 	}
 	
-	/* For YSDN2017 */
+	/* Tables */
 	.table {
 		margin: 10rem 0;
 	}
@@ -291,11 +307,7 @@ footer .about-space-below {
 	.table .row {
 		padding: 2.5rem 0;
 	}
-		
-	#p-exec {
-		margin-bottom: 2rem;
-	}
-}
+}		
 
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
@@ -311,13 +323,21 @@ footer .about-space-below {
 		line-height: 3.6rem;
 	}
 	
-	h1, a {
+	h1, h2, a {
 		font-size: 2.45rem;
 		letter-spacing: 0.05rem;
+	}
+	
+	h2 {
+		margin-bottom: 1.5rem;
 	}
 		
 	p {
 		margin-bottom: 3.7rem;
+	}
+	
+	#p-space-below {
+		margin-bottom: 1.5rem;
 	}
 
 	ul {
@@ -374,7 +394,7 @@ footer .about-space-below {
 		margin-bottom: 2.3rem;
 	}
 	
-	/* For YSDN2017 */
+	/* Tables */
 	.table {
 		margin: 10rem 0;
 	}
@@ -390,10 +410,6 @@ footer .about-space-below {
 	.table .row .five p {
 		margin-bottom: 1.3rem;
 	}
-	
-	#p-exec {
-		margin-bottom: 1.5rem;
-	}
 }
 
 
@@ -405,6 +421,14 @@ footer .about-space-below {
 	
 	.table .table-titles-min {
 		display: inherit;
+	}
+	
+	.app-screen-reduce img{
+		width: 65%;
+		height: auto;
+		display: block;
+		margin: auto;
+		padding-bottom: 3rem;
 	}
 
 }
@@ -424,13 +448,21 @@ footer .about-space-below {
 
 	}
 	
-	h1, a {
+	h1, h2, a {
 		font-size: 1.95rem;
 		letter-spacing: 0.02rem;
 	}
 	
+	h2 {
+		margin-bottom: 1.5rem;
+	}
+	
 	p {
 		margin-bottom: 3rem;
+	}
+	
+	#p-space-below {
+		margin-bottom: 1.5rem;
 	}
 
 	ul {
@@ -488,7 +520,7 @@ footer .about-space-below {
 		margin-bottom: 2rem;
 	}
 
-	/* For YSDN2017 */
+	/* Tables */
 	.table {
 		margin: 12rem 0;
 	}
@@ -503,10 +535,6 @@ footer .about-space-below {
 	
 	.table .row .five p {
 		margin-bottom: 1rem;
-	}
-	
-	#p-exec {
-		margin-bottom: 1.5rem;
 	}
 }
 
