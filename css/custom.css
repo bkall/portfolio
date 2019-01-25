@@ -251,6 +251,7 @@ footer .about-space-below {
 	width: 100%;  
 	text-align: left;
 	outline: none;  
+	background-color: transparent;
 }
 
 .collapsible:after {
