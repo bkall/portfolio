@@ -37,7 +37,7 @@ body {
   max-width: 1300px;
 }
 
-h1, h2, h3, a {
+h1, h2, h3, a, button {
 	font-family: canela, times, serif;
 	font-size: 3.9rem;
 	letter-spacing: 0.05rem;
@@ -238,7 +238,47 @@ footer .about-space-below {
 	
 
 
-/* #Media Queries
+/* Collapsibles
+================================================== */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	cursor: default;
+	padding: 0 0 2rem 0;
+	margin-bottom: 5rem;
+	border: none;
+	border-bottom: 0.2rem solid black;
+	width: 100%;  
+	text-align: left;
+	outline: none;  
+}
+
+.collapsible:after {
+  content: '(click for more)'; 
+/*   margin-left: 5px; */
+}
+
+/* Change text colour of the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+	color: #ff6699;
+	transition: color 0.3s ease;
+}
+
+.active:after {
+	content: '(click for less)'; 
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+
+
+/* Media Queries
 ================================================== */
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -248,7 +288,7 @@ footer .about-space-below {
 		line-height: 3.8rem;
 	}
 
-	h1, h2, a {
+	h1, h2, a, button {
 		font-size: 2.9rem;
 		letter-spacing: 0.05rem;
 	}
@@ -336,7 +376,7 @@ footer .about-space-below {
 		line-height: 3.6rem;
 	}
 	
-	h1, h2, a {
+	h1, h2, a, button {
 		font-size: 2.45rem;
 		letter-spacing: 0.05rem;
 	}
@@ -461,7 +501,7 @@ footer .about-space-below {
 
 	}
 	
-	h1, h2, a {
+	h1, h2, a, button {
 		font-size: 1.95rem;
 		letter-spacing: 0.02rem;
 	}
