@@ -48,14 +48,17 @@
 			<div class="ten columns">
 				<p>My grandfather Ralf’s career as a geologist for a large engineering company took him around the world. Also a writer, he recorded his experiences with wit and sensitivity. <span class="p-italic">Ralf</span> is a collection of excerpts from these memoirs that presents a portrait of the man and his life.	
 				</p>
-				<p>This book went through three significant variations in design. My initial vision for the project was cinematic: I envisioned maps, tasteful photography, and a mix of bold and classical typography. I wanted to create a sense of history, adventure and grandeur.
-				</p>
-				<p>Part way through the project, Ralf gave me a collection of photos that he had taken throughout his career. The photos were exceptional, spanning 40 years and showing him in exotic locations around the world. As he sent more of the content for the book it became clear that some of the writing also took the form of notebook entries and letters to Ralf’s family (my grandmother, father and aunt). I began exploring a direction that was more in line with a photo book—large, full-bleed images from the locations that Ralf had worked. I also worked with the graphics from Ralf’s notebooks, appropriating their visual language. The text of the chapters was on smaller pages inset amongst the photos, the idea being that the photos would quite literally create a backdrop for the writing. 
-				</p>
-				<p>After receiving all of the text for the book, I began to feel that my design decisions were interfering with my grandfather’s writing. At the outset, this project’s intent was to present a portrait of Ralf through his writing (he was, in a way, both the subject and the author); I wanted the presentation of the content to capture the spirit of Ralf’s life while letting his words create the experience for the reader. 
-				</p>
-				<p>In the book’s final form, each chapter takes place in one location. Chapters start with a title page, a halftone image and a map, all printed on coloured stock, and these introductory elements give a sense of the location and the mood of each chapter. The text of the book is set in <span class="p-italic">Operator</span>, a typeface that carries the qualities of both typewriter fonts and handwriting (these being the two methods by which Ralf has done a significant amount of his writing). On its exterior, the book’s exposed binding and coloured papers have a prominent physicality that speaks to the stories contained within. 
-				</p>
+				<button class="collapsible"></button>
+				<div class="content">
+					<p>This book went through three significant variations in design. My initial vision for the project was cinematic: I envisioned maps, tasteful photography, and a mix of bold and classical typography. I wanted to create a sense of history, adventure and grandeur.
+					</p>
+					<p>Part way through the project, Ralf gave me a collection of photos that he had taken throughout his career. The photos were exceptional, spanning 40 years and showing him in exotic locations around the world. As he sent more of the content for the book it became clear that some of the writing also took the form of notebook entries and letters to Ralf’s family (my grandmother, father and aunt). I began exploring a direction that was more in line with a photo book—large, full-bleed images from the locations that Ralf had worked. I also worked with the graphics from Ralf’s notebooks, appropriating their visual language. The text of the chapters was on smaller pages inset amongst the photos, the idea being that the photos would quite literally create a backdrop for the writing. 
+					</p>
+					<p>After receiving all of the text for the book, I began to feel that my design decisions were interfering with my grandfather’s writing. At the outset, this project’s intent was to present a portrait of Ralf through his writing (he was, in a way, both the subject and the author); I wanted the presentation of the content to capture the spirit of Ralf’s life while letting his words create the experience for the reader. 
+					</p>
+					<p>In the book’s final form, each chapter takes place in one location. Chapters start with a title page, a halftone image and a map, all printed on coloured stock, and these introductory elements give a sense of the location and the mood of each chapter. The text of the book is set in <span class="p-italic">Operator</span>, a typeface that carries the qualities of both typewriter fonts and handwriting (these being the two methods by which Ralf has done a significant amount of his writing). On its exterior, the book’s exposed binding and coloured papers have a prominent physicality that speaks to the stories contained within. 
+					</p>
+				</div>
 			</div>
 		</div>
 		
@@ -255,6 +258,7 @@
 	  		<div class="row">
 		  		<div class="twelve columns">
 		  			<ul>
+		  				<li><a href="motion-reel.html">Motion Design Reel<img class="p-img" src="../images/main/motionreel-main-1.png"></a></li>
 		  				<li><a href="ysdn2017.html">YSDN2017<img class="p-img" src="../images/main/ysdn2017-main-1.png"></a></li>
 		  				<li><a href="decline-of-cosmological-values.html">Decline of Cosmological Values<img class="p-img" src="../images/main/dcv-main-1.png"></a></li>
 		  				<li><a href="breaking-bad.html">Breaking Bad<img class="p-img" src="../images/main/bb-main-1.png"></a></li>
@@ -267,6 +271,25 @@
 		  		</div>
 	  		</div>
 	  	</footer>
-	</div>		
+	</div>
+
+<!-- Javascript for collapsibles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 	
+ 	<script>
+	 	var coll = document.getElementsByClassName("collapsible");
+	 	var i;
+
+	 	for (i = 0; i < coll.length; i++) {
+		 	coll[i].addEventListener("click", function() {
+			 	this.classList.toggle("active");
+			 	var content = this.nextElementSibling;
+			 	if (content.style.maxHeight){
+				 	content.style.maxHeight = null;
+				} else {
+					 content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			});
+		}
+	</script>			
 </body>
 		

@@ -46,10 +46,15 @@
 		</div>
 		<div class="row">
 			<div class="ten columns">
-				<p>The final portion of my investigation into Nihilism was a booklet that tied together work from the previous two projects. The essay “The Myth of Sisyphus” by Albert Camus forms the basis for the booklet and the images shown are of the camera setups I used to create the <span class="p-italic">Breaking Bad</span> opening. Camus’ essay compares our daily lives to the labours of Sisyphus, a man who was condemned to repeatedly push a stone up a mountainside and watch it roll back down for eternity. Camus makes the case that while Sisyphus cannot change his situation, it is within his power to acknowledge it and find joy in his decision to participate. In a way, the cameras in my photos can be seen as Sisyphus’ rock, and highlighting them in bright pink suggests the joy that can be found in the day-to-day. This, therefore, is a way to work through Nihilism, as suggested by both Camus and Nietzsche: after one rejects all systems of meaning, one is free to determine meaning for oneself.
+				<p>The final portion of my investigation into Nihilism was a booklet that tied together work from the previous two projects. The essay “The Myth of Sisyphus” by Albert Camus forms the basis for the booklet and the images shown are of the camera setups I used to create the <span class="p-italic">Breaking Bad</span> opening. 
 				</p>
-				<p>This booklet was printed on a Risograph printer and is bound with thread in the centre.
-				</p>
+				<button class="collapsible"></button>
+				<div class="content">
+					<p>Camus’ essay compares our daily lives to the labours of Sisyphus, a man who was condemned to repeatedly push a stone up a mountainside and watch it roll back down for eternity. Camus makes the case that while Sisyphus cannot change his situation, it is within his power to acknowledge it and find joy in his decision to participate. In a way, the cameras in my photos can be seen as Sisyphus’ rock, and highlighting them in bright pink suggests the joy that can be found in the day-to-day. This, therefore, is a way to work through Nihilism, as suggested by both Camus and Nietzsche: after one rejects all systems of meaning, one is free to determine meaning for oneself.
+					</p>
+					<p>This booklet was printed on a Risograph printer and is bound with thread in the centre.
+					</p>
+				</div>
 			</div>
 		</div>
 
@@ -169,6 +174,7 @@
 	  		<div class="row">
 		  		<div class="twelve columns">
 		  			<ul>
+		  				<li><a href="motion-reel.html">Motion Design Reel<img class="p-img" src="../images/main/motionreel-main-1.png"></a></li>
 		  				<li><a href="ysdn2017.html">YSDN2017<img class="p-img" src="../images/main/ysdn2017-main-1.png"></a></li>
 		  				<li><a href="decline-of-cosmological-values.html">Decline of Cosmological Values<img class="p-img" src="../images/main/dcv-main-1.png"></a></li>
 		  				<li><a href="breaking-bad.html">Breaking Bad<img class="p-img" src="../images/main/bb-main-1.png"></a></li>
@@ -181,6 +187,25 @@
 		  		</div>
 	  		</div>
 	  	</footer>	
-	</div>		
+	</div>
+	
+<!-- Javascript for collapsibles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 	
+ 	<script>
+	 	var coll = document.getElementsByClassName("collapsible");
+	 	var i;
+
+	 	for (i = 0; i < coll.length; i++) {
+		 	coll[i].addEventListener("click", function() {
+			 	this.classList.toggle("active");
+			 	var content = this.nextElementSibling;
+			 	if (content.style.maxHeight){
+				 	content.style.maxHeight = null;
+				} else {
+					 content.style.maxHeight = content.scrollHeight + "px";
+				} 
+			});
+		}
+	</script>		
 </body>
 		
