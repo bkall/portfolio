@@ -16,8 +16,13 @@
 }
 
 @font-face {
-	font-family: canela;
+	font-family: canela-light;
     src: url(../fonts/Canela-Light.otf);
+}
+
+@font-face {
+	font-family: canela-regular;
+    src: url(../fonts/Canela-Regular.otf);
 }
 
 ::selection {
@@ -38,7 +43,7 @@ body {
 }
 
 h1, h2, h3, a, button {
-	font-family: canela, times, serif;
+	font-family: canela-light, times, serif;
 	font-size: 3.9rem;
 	letter-spacing: 0.05rem;
 }
@@ -491,9 +496,14 @@ footer .about-space-below {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	body {
+		font-family: gteesti-regular, helvetica, sans-serif;
 		font-size: 2rem;
 		line-height: 2.8rem;	
 		margin-top: 3rem;
+	}
+	
+	h1, h2, h3, a, button {
+		font-family: canela-regular, times, serif;
 	}
 	
 	h1 {
