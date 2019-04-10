@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -13,6 +12,11 @@
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -26,7 +30,7 @@
 
 </head>
 
-<body>
+<body id="ysdn2017-body">
 	<div class="container">
 		<div class="row">
 			<div class="offset-by-one column">
@@ -242,494 +246,13 @@
 					</p>
 					<p>While performing these top-level duties, I also spent time with our teams doing design work, providing critique, shopping for materials, writing copy, constructing displays, editing photos, discussing user experiences, loading trucks, and generally helping wherever I could or was needed. My work with each team ranged from conceptual planning to fine-detail production.
 					</p>
-					<p>In April 2017, in its final form, our travelling show visited <a href="https://www.google.ca/maps/place/Sheridan+College/@43.469015,-79.7008127,17z/data=!3m1!4b1!4m5!3m4!1s0x882b5d28315b07cd:0xffcd239cf878470e!8m2!3d43.469015!4d-79.698624" target="_blank">Sheridan College</a>, <a href="https://www.google.ca/maps/place/York+University/@43.7748371,-79.5069326,15.43z/data=!4m5!3m4!1s0x89d4cd330b767bfb:0xdbb899cc9da76d19!8m2!3d43.7734535!4d-79.5018684" target="_blank">York University</a>, <a href="https://www.google.ca/maps/place/Gladstone+Hotel/@43.642701,-79.4290986,17z/data=!3m1!4b1!4m5!3m4!1s0x882b35aaea2927c1:0x92e9d8d2a35ee872!8m2!3d43.6426971!4d-79.4269046" target="_blank">The Gladstone Hotel</a> on Queen Street West, and <a href="https://www.google.ca/maps/place/BrainStation/@43.6455574,-79.3975871,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34d942a05c8f:0x4fe50ae63354255e!8m2!3d43.6455535!4d-79.3953931" target="_blank">Konrad Group’s BrainStation</a> space at King and Spadina, and consisted of 85 printed display panels, three display stands of books and magazines, one display table of packaging work, and three interactive touch-screen kiosks (one dedicated to interactive and motion work, one to displaying the student case studies on our website, and one that allowed visitors to create posters from our brand elements). Our website provided <a href="http://ysdn2017.com/event/" target="_blank">showcase details</a>, in-depth <a href="http://ysdn2017.com/directory/" target="_blank">case studies</a> of student projects, and a <a href="http://ysdn2017.com/network/" target="_blank">networking tool</a> that allowed visitors to the travelling shows to bookmark and be emailed the contact information of students that they had interest in speaking with. 1,000 copies of our <a href="http://ysdn2017.com/book-launch/" target="_blank">publication</a> were offset-printed and either sold or distributed to students, faculty, industry and the public. The publication captured a sample of the work, process and thinking of each student in our year through gallery pages, case studies and manifestos, and offered a glimpse into the process behind the showcase as written by our design teams’ executives (myself included). Our book launch, held at the <a href="https://www.google.ca/maps/place/The+Gym+at+99+Sudbury/@43.6411541,-79.42275,15z/data=!4m5!3m4!1s0x0:0x20ba5d250e891a7d!8m2!3d43.6411541!4d-79.42275" target="_blank">Glass Factory</a> on Queen Street West, was attended by over 350 creative professionals and allowed the design industry in Toronto exclusive access to our students, as well as providing all attendees with a free copy of our book. At this event, student case studies from the website were displayed on a Microsoft Surface Hub and our brand poster creator was moved onto four Microsoft Surface Studio desktop computers.
+					<p>In April 2017, in its final form, our travelling show visited <a href="https://www.google.ca/maps/place/Sheridan+College/@43.469015,-79.7008127,17z/data=!3m1!4b1!4m5!3m4!1s0x882b5d28315b07cd:0xffcd239cf878470e!8m2!3d43.469015!4d-79.698624" target="_blank">Sheridan College</a>, <a href="https://www.google.ca/maps/place/York+University/@43.7748371,-79.5069326,15.43z/data=!4m5!3m4!1s0x89d4cd330b767bfb:0xdbb899cc9da76d19!8m2!3d43.7734535!4d-79.5018684" target="_blank">York University</a>, <a href="https://www.google.ca/maps/place/Gladstone+Hotel/@43.642701,-79.4290986,17z/data=!3m1!4b1!4m5!3m4!1s0x882b35aaea2927c1:0x92e9d8d2a35ee872!8m2!3d43.6426971!4d-79.4269046" target="_blank">The Gladstone Hotel</a> on Queen Street West, and <a href="https://www.google.ca/maps/place/BrainStation/@43.6455574,-79.3975871,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34d942a05c8f:0x4fe50ae63354255e!8m2!3d43.6455535!4d-79.3953931" target="_blank">Konrad Group’s BrainStation</a> space at King and Spadina, and consisted of 85 printed display panels, three display stands of books and magazines, one display table of packaging work, and three interactive touch-screen kiosks (one dedicated to interactive and motion work, one to displaying the student case studies on our website, and one that allowed visitors to create posters from our brand elements). Our website provided showcase details, in-depth case studies of student projects, and a networking tool that allowed visitors to the travelling shows to bookmark and be emailed the contact information of students that they had interest in speaking with. 1,000 copies of our publication were offset-printed and either sold or distributed to students, faculty, industry and the public. The publication captured a sample of the work, process and thinking of each student in our year through gallery pages, case studies and manifestos, and offered a glimpse into the process behind the showcase as written by our design teams’ executives (myself included). Our book launch, held at the <a href="https://www.google.ca/maps/place/The+Gym+at+99+Sudbury/@43.6411541,-79.42275,15z/data=!4m5!3m4!1s0x0:0x20ba5d250e891a7d!8m2!3d43.6411541!4d-79.42275" target="_blank">Glass Factory</a> on Queen Street West, was attended by over 350 creative professionals and allowed the design industry in Toronto exclusive access to our students, as well as providing all attendees with a free copy of our book. At this event, student case studies from the website were displayed on a Microsoft Surface Hub and our brand poster creator was moved onto four Microsoft Surface Studio desktop computers.
 					</p> 
 					<p>This showcase was the result of over 10,000 collective hours of thinking, discussion, design and execution by the YSDN class of 2017.
 					</p>
 				</div>
 			</div>
-		</div>
-		
-		
- <!-- Sheridan
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
-		<div class="img-section">
-			<div class="row">
-				<h2>Sheridan College (Wednesday, April 19, 2017)</h2>
-			</div>
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-1.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-2.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-3.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-4.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-5.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-6.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-7.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-8.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-10.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-14.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-12.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-13.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-11.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-15.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-16.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-17.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-18.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-19.jpg">
-				</div>
-			</div>
-		</div>
-
-		
- <!-- York
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
-		<div class="img-section">
-			<div class="row">
-				<h2>York University (Thursday, April 20, 2017)</h2>
-			</div>	
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-1.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-2.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-3.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-4.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-5.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-6.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-7.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-8.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-9.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-10.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-11.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/2-york-12.jpg">
-				</div>
-			</div>
-		</div>
-		
-		
-<!-- Gladstone
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
-		<div class="img-section">
-			<div class="row">
-				<h2>The Gladstone Hotel (Friday, April 21, 2017)</h2>
-			</div>
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-1.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-2.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-3.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-4.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-5.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-6.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-7.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-8.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-9.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-10.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-11.jpg">
-				</div>
-			</div>
-		</div>
-		
-		
-<!-- Konrad
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
-		<div class="img-section">
-			<div class="row">
-				<h2>Konrad Group (Saturday, April 22, 2017)</h2>
-			</div>
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-2.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-1.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-3.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-4.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-7.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-5.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-6.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-9.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-10.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-8.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-11.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-14.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-12.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-13.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-15.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-16.jpg">
-				</div>
-			</div>
-		</div>
-
-
-<!-- Book Launch
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
-		<div class="img-section">
-			<div class="row">
-				<h2>Book Launch (Tuesday, April 25, 2017)</h2>
-			</div>
-			<div class="row">
-				<div class="twelve columns">
-					<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-					</style>
-					<div class='embed-container'>
-						<iframe src="https://player.vimeo.com/video/217211053?color=ffffff&title=0&byline=0&portrait=0" width="1500" height="844" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-						</iframe>
-					</div>
-				</div>
-			</div>
-  		</div>
-	
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-1.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-2.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-3.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-4.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-6.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-5.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-7.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-8.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-9.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-10.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-11.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-12.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-50.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-15.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-16.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-13.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-17.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-18.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-19.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-20.jpg">
-				</div>
-			</div>
-			<div class="row">
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-27.jpg">
-				</div>
-				<div class="six columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-21.jpg">
-				</div>
-			</div>
-		</div>
-		<div class="img-section">
-			<div class="row">
-				<div class="twelve columns">
-					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-23.jpg">
-				</div>
-			</div>
-		</div>
-
-
-<!-- YSDN2017 Executives
+			<!-- YSDN2017 Executives
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->		
 		<div class="img-section list-group " id="executives">
 			<div class="row">
@@ -841,6 +364,505 @@
 				</div>
 			</div>
 		</div>
+	</div>
+		
+		
+ <!-- Sheridan
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->	
+		<div class="img-section">
+			<div class="row">
+				<h2>Sheridan College (Wednesday, April 19, 2017)</h2>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-1.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-4.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-7.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-11.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-12.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-8.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-19.jpg">
+				</div>
+			</div>
+		</div>
+			<!--
+<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-8.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-10.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-14.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-12.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-13.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-11.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-15.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-16.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-17.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-18.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/1-sheridan-19.jpg">
+				</div>
+			</div>
+		</div>
+-->
+
+		
+ <!-- York
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
+		<div class="img-section">
+			<div class="row">
+				<h2>York University (Thursday, April 20, 2017)</h2>
+			</div>	
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-1.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-2.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-3.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-4.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-6.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-12.jpg">
+				</div>
+			</div>
+		</div>
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-7.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-8.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-9.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-10.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-11.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/2-york-12.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		
+		
+<!-- Gladstone
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
+		<div class="img-section">
+			<div class="row">
+				<h2>The Gladstone Hotel (Friday, April 21, 2017)</h2>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-1.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-11.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-4.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-10.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-5.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-6.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-7.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-8.jpg">
+				</div>
+			</div>
+		</div>
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-9.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-10.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/3-gladstone-11.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		
+		
+<!-- Konrad
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
+		<div class="img-section">
+			<div class="row">
+				<h2>Konrad Group (Saturday, April 22, 2017)</h2>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-2.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-1.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-3.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-4.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-10.jpg">
+				</div>
+			</div>
+		</div>
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-5.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-6.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-9.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-10.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-8.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-11.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-14.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-12.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-13.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-16.jpg">
+				</div>
+			</div>
+		</div>
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/4-konrad-16.jpg">
+				</div>
+			</div>
+		</div>
+-->
+
+
+<!-- Book Launch
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->			
+		<div class="img-section">
+			<div class="row">
+				<h2>Book Launch (Tuesday, April 25, 2017)</h2>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+					</style>
+					<div class='embed-container'>
+						<iframe src="https://player.vimeo.com/video/217211053?color=ffffff&title=0&byline=0&portrait=0" width="1500" height="844" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+						</iframe>
+					</div>
+				</div>
+			</div>
+  		</div>
+	
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-1.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-2.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-3.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-11.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-6.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-5.jpg">
+				</div>
+			</div>
+		</div>
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-7.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-8.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-9.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-10.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-11.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-12.jpg">
+				</div>
+			</div>
+		</div>
+-->
+		<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-50.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-17.jpg">
+				</div>
+			</div>
+			<!--
+<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-16.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-13.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-17.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+-->
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-23.jpg">
+				</div>
+			</div>
+		</div>
+		<!--
+<div class="img-section">
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-19.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-20.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-27.jpg">
+				</div>
+				<div class="six columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-21.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="img-section">
+			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/ysdn2017/5-booklaunch-23.jpg">
+				</div>
+			</div>
+		</div>
+-->
+
 
 
 	  <!-- Footer/Nav
@@ -849,15 +871,12 @@
 	  		<div class="row">
 		  		<div class="twelve columns">
 		  			<ul>
-		  				<li><a href="motion-reel.html">Motion Design Reel<img class="p-img" src="../images/main/motionreel-main-1.png"></a></li>
-		  				<li>YSDN2017<img class="p-img" src="../images/main/ysdn2017-main-1.png"></li>
-		  				<li><a href="decline-of-cosmological-values.html">Decline of Cosmological Values<img class="p-img" src="../images/main/dcv-main-1.png"></a></li>
-		  				<li><a href="breaking-bad.html">Breaking Bad<img class="p-img" src="../images/main/bb-main-1.png"></a></li>
-		  				<li><a href="myth-of-sisyphus.html">The Myth of Sisyphus<img class="p-img" src="../images/main/sisyphus-main-2.png"></a></li>
-		  				<li><a href="xplor.html">Xplor<img class="p-img" src="../images/main/xplor-main-2.png"></a></li>
-		  				<li><a href="ralf.html">Ralf<img class="p-img" src="../images/main/ralf-main-1.png"></a></li>
-		  				<li><a href="cine-quarterly.html">Cine Quarterly<img class="p-img" src="../images/main/cine-main-1.png"></a></li>
-		  				<li><a href="darwin.html">Darwin<img class="p-img" src="../images/main/darwin-main-2.png"></a></li>
+		  				<li><a id="bokehsite-navhover" href="bokehsite.html">Bokeh Collective Website<img class="nav-img" src="../images/nav/bokehsite-nav.jpg"></a></li>
+		  				<li><a id="motionreel-navhover" href="motionreel.html">Motion Design Reel<img class="nav-img" src="../images/nav/motionreel-nav.jpg"></a></li>
+		  				<li><a id="xplor-navhover" href="xplor.html">Xplor<img class="nav-img" src="../images/nav/xplor-nav.jpg"></a></li>
+		  				<li><a id="ralf-navhover" href="ralf.html">Ralf<img class="nav-img" src="../images/nav/ralf-nav.jpg"></a></li>
+		  				<li><a id="darwin-navhover" href="darwin.html">Darwin<img class="nav-img" src="../images/nav/darwin-nav.jpg"></a></li>
+		  				<li>YSDN2017<img class="nav-img" src="../images/nav/ysdn2017-nav.jpg"></li>
 		  			</ul>
 		  		</div>
 	  		</div>
@@ -882,5 +901,80 @@
 			});
 		}
 	</script>
-</body>
+	
+	<!-- jQuery scripts for colour hover changes -->
+  	<script>
+		$(function() {
+			$('#arrow').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'white'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+				});
+		});
 		
+		$(function() {
+			$('#bokehsite-navhover').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(222,201,120,0.3)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#motionreel-navhover').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(200,241,252,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#xplor-navhover').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#ralf-navhover').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(252,210,190,0.4)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#darwin-navhover').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+				});
+		});
+		
+		/*
+$(function() {
+			$('#ysdn2017-navhover').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+				});
+		});
+*/
+	</script>	
+</body>
+</html>		

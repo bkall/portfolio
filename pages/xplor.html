@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -18,7 +17,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
-   <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" href="../css/custom.css">
+
+  <!-- jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -26,7 +30,7 @@
 
 </head>
 
-<body>
+<body id="xplor-body">
 	<div class="container">
 		<div class="row">
 			<div class="offset-by-one column">
@@ -48,13 +52,6 @@
 			<div class="ten columns">
 				<p>Xplor is a smartphone application that allows people to search for and book campsites. Users can search by proximity or look in a specific area, and can filter results by price, amenities, and availability of dates.
 				</p>
-				<button class="collapsible"></button>
-				<div class="content">
-					<p>Prior to prototyping, an analysis was undertaken to investigate the people that might use the app, their desired activities within the app, the context in which they would use it, and the capabilities of current technology to facilitate their needs. User scenarios and flows were also generated; this <a href="#process">process work</a> can be seen below.
-					</p>
-					<p>This project was completed with <a href="http://fran.world/" target="_blank">Francesca Morreale</a> and <a href="http://eaq.design/" target="_blank">Evelyn Quinn</a> and received an Honourable Mention in the User Experience category for the RGD’s 2016 Student Awards. My roles included drafting the user scenarios, designing the user experience, creating both the low-fidelity and high-fidelity prototypes (using <a href="https://marvelapp.com/pop/?popref=1" target="_blank">Prototyping on Paper</a> and <a href="http://www.pixate.com/" target="_blank">Pixate</a> [RIP], respectively), refining the high-fidelity interface, and directing, shooting and editing the promotional video.
-					</p>
-				</div>
 			</div>
 		</div>
 		
@@ -65,43 +62,43 @@
 			<div class="row app-screen-reduce">
 				<div class="four columns">
 					<p class="caption">Login</p>
-					<img class="u-max-full-width" src="../images/xplor/xplor-1.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-1.png">
 				</div>
 				<div class="four columns">
 					<p class="caption">Browse</p>
-					<img class="u-max-full-width" src="../images/xplor/xplor-2.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-2.png">
 				</div>
 				<div class="four columns">
 					<p class="caption">Location search</p>
-					<img class="u-max-full-width" src="../images/xplor/xplor-3.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-3.png">
 				</div>
 			</div>
 			<div class="row app-screen-reduce">
 				<div class="four columns">
 					<p class="caption">Refine search</p>				
-					<img class="u-max-full-width" src="../images/xplor/xplor-4.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-4.png">
 				</div>
 				<div class="four columns">
 					<p class="caption">Arrival date</p>				
-					<img class="u-max-full-width" src="../images/xplor/xplor-5.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-5.png">
 				</div>
 				<div class="four columns">
 					<p class="caption">Departure date</p>				
-					<img class="u-max-full-width" src="../images/xplor/xplor-6.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-6.png">
 				</div>
 			</div>
 			<div class="row app-screen-reduce">
 				<div class="four columns">
 					<p class="caption">Search results</p>				
-					<img class="u-max-full-width" src="../images/xplor/xplor-7.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-7.png">
 				</div>
 				<div class="four columns">
 					<p class="caption">Site profile</p>								
-					<img class="u-max-full-width" src="../images/xplor/xplor-8.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-8.png">
 				</div>
 				<div class="four columns">
 					<p class="caption">Confirmation</p>				
-					<img class="u-max-full-width" src="../images/xplor/xplor-9_1.jpg">
+					<img class="u-max-full-width" src="../images/xplor/xplor-9_1.png">
 				</div>
 			</div>
 		</div>
@@ -124,11 +121,16 @@
 		
 	  <!-- Process
   ––––––––––––––––––––––––––––––––––––––––––––––––––-->		
-		<div class="list-group img-section" id="process">
+		<div class="list-group img-section">
 <!-- 			<h1>Process</h1> -->
-			<button class="collapsible">Process </button>
+			<button class="collapsible"></button>
 			<div class="content">
 				<div class="row">
+					<p>Prior to prototyping, an analysis was undertaken to investigate the people that might use the app, their desired activities within the app, the context in which they would use it, and the capabilities of current technology to facilitate their needs. User scenarios and flows were also generated; this process work can be seen below.
+					</p>
+					<br>
+					<p>This project was completed with <a href="http://fran.world/" target="_blank">Francesca Morreale</a> and <a href="http://eaq.design/" target="_blank">Evelyn Quinn</a> and received an Honourable Mention in the User Experience category for the RGD’s 2016 Student Awards. My roles included drafting the user scenarios, designing the user experience, creating both the low-fidelity and high-fidelity prototypes (using <a href="https://marvelapp.com/pop/?popref=1" target="_blank">Prototyping on Paper</a> and <a href="http://www.pixate.com/" target="_blank">Pixate</a> [RIP], respectively), refining the high-fidelity interface, and directing, shooting and editing the promotional video.
+					</p>
 					<div class="offset-by-one column">
 						<h1>&mdash;Target Audience</h1>
 					</div>
@@ -300,12 +302,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="ten columns">
-						<p>With the core of the user experience determined, I passed the project to my teammates to continue the high-fidelity interface. These sketches served as a starting point for the visual design.
-						</p>
-					</div>
-				</div>
 			</div>
 		</div>
 		
@@ -317,15 +313,12 @@
 	  		<div class="row">
 		  		<div class="twelve columns">
 		  			<ul>
-		  				<li><a href="motion-reel.html">Motion Design Reel<img class="p-img" src="../images/main/motionreel-main-1.png"></a></li>
-		  				<li><a href="ysdn2017.html">YSDN2017<img class="p-img" src="../images/main/ysdn2017-main-1.png"></a></li>
-		  				<li><a href="decline-of-cosmological-values.html">Decline of Cosmological Values<img class="p-img" src="../images/main/dcv-main-1.png"></a></li>
-		  				<li><a href="breaking-bad.html">Breaking Bad<img class="p-img" src="../images/main/bb-main-1.png"></a></li>
-		  				<li><a href="myth-of-sisyphus.html">The Myth of Sisyphus<img class="p-img" src="../images/main/sisyphus-main-2.png"></a></li>
-		  				<li>Xplor<img class="p-img" src="../images/main/xplor-main-2.png"></li>
-		  				<li><a href="ralf.html">Ralf<img class="p-img" src="../images/main/ralf-main-1.png"></a></li>
-		  				<li><a href="cine-quarterly.html">Cine Quarterly<img class="p-img" src="../images/main/cine-main-1.png"></a></li>
-		  				<li><a href="darwin.html">Darwin<img class="p-img" src="../images/main/darwin-main-2.png"></a></li>
+		  				<li><a id="bokehsite-navhover" href="bokehsite.html">Bokeh Collective Website<img class="nav-img" src="../images/nav/bokehsite-nav.jpg"></a></li>
+		  				<li><a id="motionreel-navhover" href="motionreel.html">Motion Design Reel<img class="nav-img" src="../images/nav/motionreel-nav.jpg"></a></li>
+		  				<li>Xplor<img class="nav-img" src="../images/nav/xplor-nav.jpg"></li>
+		  				<li><a id="ralf-navhover" href="ralf.html">Ralf<img class="nav-img" src="../images/nav/ralf-nav.jpg"></a></li>
+		  				<li><a id="darwin-navhover" href="darwin.html">Darwin<img class="nav-img" src="../images/nav/darwin-nav.jpg"></a></li>
+		  				<li><a id="ysdn2017-navhover" href="ysdn2017.html">YSDN2017<img class="nav-img" src="../images/nav/ysdn2017-nav.jpg"></a></li>
 		  			</ul>
 		  		</div>
 	  		</div>
@@ -349,6 +342,81 @@
 				} 
 			});
 		}
-	</script>	
-</body>
+	</script>
+	
+	<!-- jQuery scripts for colour hover changes -->
+  	<script>
+		$(function() {
+			$('#arrow').hover(
+				function() {
+					$('#xplor-body').stop().animate({backgroundColor:'white'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+				});
+		});
+
+		$(function() {
+			$('#bokehsite-navhover').hover(
+				function() {
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(222,201,120,0.3)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+				});
+		});
 		
+		$(function() {
+			$('#motionreel-navhover').hover(
+				function() {
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(200,241,252,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+				});
+		});
+		
+		/*
+$(function() {
+			$('#xplor-navhover').hover(
+				function() {
+					$('#motionreel-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#motionreel-body').stop().animate({backgroundColor:'rgba(200,241,252,0.5)'}, 300);
+				});
+		});
+*/
+		
+		$(function() {
+			$('#ralf-navhover').hover(
+				function() {
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(252,210,190,0.4)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#darwin-navhover').hover(
+				function() {
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#ysdn2017-navhover').hover(
+				function() {
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#xplor-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+				});
+		});
+	</script>
+</body>
+</html>		

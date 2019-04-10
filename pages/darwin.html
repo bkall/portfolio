@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -20,13 +19,18 @@
   <link rel="stylesheet" href="../css/skeleton.css">
    <link rel="stylesheet" href="../css/custom.css">
 
+  <!-- jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="../images/favicon.ico">
 
 </head>
 
-<body>
+<body id="darwin-body">
 	<div class="container">
 		<div class="row">
 			<div class="offset-by-one column">
@@ -50,7 +54,7 @@
 				</p>
 				<button class="collapsible"></button>
 				<div class="content">
-					<p>These philosophical viewpoints are oppositional in nature, the former grounded in traditional Christian beliefs and the latter the product of scientific investigation. The entire text of The Book of Genesis wraps around the dust jackets of three identical copies of Darwin’s <span class="p-italic">The Origin of Species</span>, and Darwin’s title takes away from this text. Inside, an aged Darwin looks through symbolic Christian crosses cut into his text. These books seek to explore the implications when one set of beliefs is held so strongly that no other beliefs can be considered.
+					<p>These philosophical viewpoints are oppositional in nature, the former grounded in traditional Christian beliefs and the latter the product of scientific investigation. The entire text of The Book of Genesis wraps around the dust jackets of three identical copies of Darwin’s <span class="p-italic">The Origin of Species</span>, and Darwin’s title takes away from this text. Inside, an aged Darwin looks through symbolic Christian crosses cut into his text. These books seek to explore the implications when one set of beliefs is held so strongly that no other positions can be considered.
 					</p>
 				</div>
 			</div>
@@ -67,18 +71,20 @@
 			</div>
 			<div class="row">
 				<div class="six columns">
-					<img class="u-max-full-width" src="../images/darwin/darwin-2.jpg">
-				</div>
-				<div class="six columns">
 					<img class="u-max-full-width" src="../images/darwin/darwin-3.jpg">
 				</div>
-			</div>
-			<div class="row">
-				<div class="twelve columns">
+				<div class="six columns">
 					<img class="u-max-full-width" src="../images/darwin/darwin-4.jpg">
 				</div>
 			</div>
 			<div class="row">
+				<div class="twelve columns">
+					<img class="u-max-full-width" src="../images/darwin/darwin-7.jpg">
+				</div>
+			</div>
+		</div>
+			<!--
+<div class="row">
 				<div class="six columns">
 					<img class="u-max-full-width" src="../images/darwin/darwin-5.jpg">
 				</div>
@@ -91,6 +97,8 @@
 					<img class="u-max-full-width" src="../images/darwin/darwin-7.jpg">
 				</div>
 			</div>
+-->
+		<div class="img-section">
 			<div class="row">
 				<div class="six columns">
 					<img class="u-max-full-width" src="../images/darwin/darwin-8.jpg">
@@ -109,6 +117,8 @@
 					<img class="u-max-full-width" src="../images/darwin/darwin-11.jpg">
 				</div>
 			</div>
+		</div>
+		<div class="img-section">
 			<div class="row">
 				<div class="six columns">
 					<img class="u-max-full-width" src="../images/darwin/darwin-12.jpg">
@@ -117,11 +127,13 @@
 					<img class="u-max-full-width" src="../images/darwin/darwin-13.jpg">
 				</div>
 			</div>
-			<div class="row">
+			<!--
+<div class="row">
 				<div class="twelve columns">
 					<img class="u-max-full-width" src="../images/darwin/darwin-14.jpg">
 				</div>
 			</div>
+-->
 			<div class="row">
 				<div class="twelve columns">
 					<img class="u-max-full-width" src="../images/darwin/darwin-15.jpg">
@@ -136,15 +148,12 @@
 	  		<div class="row">
 		  		<div class="twelve columns">
 		  			<ul>
-		  				<li><a href="motion-reel.html">Motion Design Reel<img class="p-img" src="../images/main/motionreel-main-1.png"></a></li>
-		  				<li><a href="ysdn2017.html">YSDN2017<img class="p-img" src="../images/main/ysdn2017-main-1.png"></a></li>
-		  				<li><a href="decline-of-cosmological-values.html">Decline of Cosmological Values<img class="p-img" src="../images/main/dcv-main-1.png"></a></li>
-		  				<li><a href="breaking-bad.html">Breaking Bad<img class="p-img" src="../images/main/bb-main-1.png"></a></li>
-		  				<li><a href="myth-of-sisyphus.html">The Myth of Sisyphus<img class="p-img" src="../images/main/sisyphus-main-2.png"></a></li>
-		  				<li><a href="xplor.html">Xplor<img class="p-img" src="../images/main/xplor-main-2.png"></a></li>
-		  				<li><a href="ralf.html">Ralf<img class="p-img" src="../images/main/ralf-main-1.png"></a></li>
-		  				<li><a href="cine-quarterly.html">Cine Quarterly<img class="p-img" src="../images/main/cine-main-1.png"></a></li>
-		  				<li>Darwin<img class="p-img" src="../images/main/darwin-main-2.png"></li>
+		  				<li><a id="bokehsite-navhover" href="bokehsite.html">Bokeh Collective Website<img class="nav-img" src="../images/nav/bokehsite-nav.jpg"></a></li>
+		  				<li><a id="motionreel-navhover" href="motionreel.html">Motion Design Reel<img class="nav-img" src="../images/nav/motionreel-nav.jpg"></a></li>
+		  				<li><a id="xplor-navhover" href="xplor.html">Xplor<img class="nav-img" src="../images/nav/xplor-nav.jpg"></a></li>
+		  				<li><a id="ralf-navhover" href="ralf.html">Ralf<img class="nav-img" src="../images/nav/ralf-nav.jpg"></a></li>
+		  				<li>Darwin<img class="nav-img" src="../images/nav/darwin-nav.jpg"></li>
+		  				<li><a id="ysdn2017-navhover" href="ysdn2017.html">YSDN2017<img class="nav-img" src="../images/nav/ysdn2017-nav.jpg"></a></li>
 		  			</ul>
 		  		</div>
 	  		</div>
@@ -168,6 +177,81 @@
 				} 
 			});
 		}
-	</script>		
-</body>
+	</script>	
+	
+	<!-- jQuery scripts for colour hover changes -->
+  	<script>
+		$(function() {
+			$('#arrow').hover(
+				function() {
+					$('#darwin-body').stop().animate({backgroundColor:'white'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+				});
+		});
 		
+		$(function() {
+			$('#bokehsite-navhover').hover(
+				function() {
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(222,201,120,0.3)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#motionreel-navhover').hover(
+				function() {
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(200,241,252,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#xplor-navhover').hover(
+				function() {
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#ralf-navhover').hover(
+				function() {
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(252,210,190,0.4)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+				});
+		});
+		
+		/*
+$(function() {
+			$('#darwin-navhover').hover(
+				function() {
+					$('#ralf-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ralf-body').stop().animate({backgroundColor:'rgba(252,210,190,0.4)'}, 300);
+				});
+		});
+*/
+		
+		$(function() {
+			$('#ysdn2017-navhover').hover(
+				function() {
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#darwin-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+				});
+		});
+	</script>	
+</body>
+</html>		
