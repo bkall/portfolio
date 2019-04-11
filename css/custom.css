@@ -56,7 +56,7 @@ body {
 #ysdn2017-body {background-color: rgba(255,230,236,0.7)}
 
 .container {
-  max-width: 1200px;
+  max-width: 900px;
 }
 
 h1, h2, h3, a, button {
@@ -86,7 +86,7 @@ a:hover {
 	border-bottom: 1px solid black;
 }
 
-#a-img-main:hover {
+#a-no-underline:hover {
 	border-bottom: 1px solid transparent;	
 }
 
@@ -184,8 +184,7 @@ hr {
 }
 
 .contact-info {
-	margin-top: 5rem;
-	padding-bottom: 20rem;
+	margin-top: 6rem;
 }
 
 .u-full-width {
@@ -197,8 +196,13 @@ hr {
 	position: fixed;
 	padding: 0 0 0.5rem 0;
 	z-index: 100;
-	border-bottom: 1px solid transparent;
-	transition: border-bottom 0.3s ease;
+}
+
+#arrow-main {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 3rem;
 }
 
 footer {
@@ -314,7 +318,7 @@ footer .about-space-below {
 ================================================== */
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 875px) and (max-width: 1300px) {
+@media only screen and (min-width: 875px) and (max-width: 2000px) {
 	body {
 		font-size: 3rem;
 		line-height: 3.8rem;
@@ -368,6 +372,10 @@ footer .about-space-below {
 	}
 	
 	#arrow {
+		height: 2.2rem;
+	}
+	
+	#arrow-main {
 		height: 2.2rem;
 	}
 	
@@ -456,7 +464,6 @@ footer .about-space-below {
 
 	.contact-info {
 		margin-top: 3rem;
-		padding-bottom: 10rem;
 	}
 	
 	.nav-img {
@@ -464,6 +471,10 @@ footer .about-space-below {
 	}
 	
 	#arrow{
+		height: 1.9rem;
+	}
+	
+	#arrow-main {
 		height: 1.9rem;
 	}
 	
@@ -588,14 +599,17 @@ footer .about-space-below {
 
 	.contact-info {
 		margin-top: 3rem;
-		padding-bottom: 10rem;
 	}
 
 	.nav-img {
 		height: 1.7rem;
 	}
 	
-	#arrow{
+	#arrow {
+		height: 1.7rem;
+	}
+	
+	#arrow-main {
 		height: 1.7rem;
 	}
 	
