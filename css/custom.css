@@ -551,14 +551,14 @@ footer .about-space-below {
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
 	body {
-		font-family: gteesti-regular, helvetica, sans-serif;
+/* 		font-family: gteesti-regular, helvetica, sans-serif; */
 		font-size: 2rem;
 		line-height: 2.8rem;	
 		margin-top: 3rem;
 	}
 	
 	h1, h2, h3, a, button {
-		font-family: canela-regular, times, serif;
+/* 		font-family: canela-regular, times, serif; */
 	}
 	
 	h1 {
