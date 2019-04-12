@@ -114,8 +114,9 @@ img {
 }
 
 .main-img {
-	padding: 0 2.1rem;
-	margin-bottom: 3rem;
+	margin: 3rem 2.1rem 5rem 2.1rem;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
 }
 
 .nav-img {
@@ -185,10 +186,6 @@ hr {
 	margin-bottom: 3rem;
 }
 
-.contact-info {
-	margin-top: 6rem;
-}
-
 .u-full-width {
 	margin: 30rem 0;
 }
@@ -201,9 +198,6 @@ hr {
 }
 
 #arrow-main {
-	position: absolute;
-	bottom: 0;
-	right: 0;
 	height: 3rem;
 }
 
@@ -405,7 +399,7 @@ footer .about-space-below {
 
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 874px) {
+@media only screen and (min-width: 500px) and (max-width: 874px) {
 	body {
 		margin-top: 3rem;
 		font-size: 2.5rem;
@@ -463,10 +457,6 @@ footer .about-space-below {
 		padding-top: 5rem;
 		padding-bottom: 5rem;
 	}
-
-	.contact-info {
-		margin-top: 3rem;
-	}
 	
 	.nav-img {
 		height: 1.8rem;
@@ -509,8 +499,8 @@ footer .about-space-below {
 }
 
 
-/* Show and hide table column headings at single-column break point */
-@media only screen and (max-width: 599px) {
+/* Show and hide table column headings, adjust home pg img at single-column break point */
+@media only screen and (max-width: 639px) {
 	.table .table-titles-full {
 		display: none;
 	}
@@ -530,12 +520,15 @@ footer .about-space-below {
 	.main-p {
 		margin-bottom: 0.5rem;
 	}
-
+	
+	.main-img {
+		margin: 3rem 0rem 5rem 0rem;
+	}
 }
 
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 499px) {
 	body {
 		font-size: 2rem;
 		line-height: 2.8rem;	
@@ -600,7 +593,7 @@ footer .about-space-below {
 	}
 
 	.contact-info {
-		margin-top: 3rem;
+/* 		margin-top: 3rem; */
 	}
 
 	.nav-img {
