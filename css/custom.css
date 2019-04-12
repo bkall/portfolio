@@ -46,6 +46,7 @@ body {
 	font-size: 4rem;
 	line-height: 5rem;
 	color: black;
+	cursor: url(../images/misc/cursor-normal.png), auto;
 }
 
 #bokehsite-body {background-color: rgba(222,201,120,0.3);}
@@ -84,6 +85,7 @@ a {
 a:hover {
 	color: black;
 	border-bottom: 1px solid black;
+	cursor: url(../images/misc/cursor-active.png), auto;
 }
 
 #a-no-underline:hover {
