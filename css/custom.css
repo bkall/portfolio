@@ -282,7 +282,7 @@ footer .about-space-below {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-	cursor: pointer;
+	cursor: url(../images/misc/cursor-active.png), auto;
 	padding: 0;
 	margin-bottom: 5rem;
 	border: none;
