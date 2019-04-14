@@ -204,8 +204,12 @@ hr {
 
 header {
 	height: 100vh;
-	padding: 5rem 10% 0 10%;
+	padding: 4rem 10% 0 10%;
 	background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(255,0,0,0.1))
+}
+
+#header-first-div {
+	padding-top: 3rem;
 }
 
 footer {
@@ -536,6 +540,14 @@ footer .about-space-below {
 	
 	.main-img {
 		margin: 3rem 0rem 5rem 0rem;
+	}
+	
+	header {
+	padding-top: 3rem;
+}
+
+	#header-first-div {
+		padding-top: 2rem;
 	}
 	
 	footer {
