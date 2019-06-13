@@ -1,0 +1,605 @@
+/*fonts */
+
+@font-face {
+    font-family: gteesti-light;
+    src: url(../fonts/GTEestiProText-Light.otf);
+}
+
+@font-face {
+    font-family: gteesti-light-italic;
+    src: url(../fonts/GTEestiProText-LightItalic.otf);
+}
+
+@font-face {
+    font-family: gteesti-regular;
+    src: url(../fonts/GTEestiProText-Regular.otf);
+}
+
+@font-face {
+	font-family: canela-light;
+    src: url(../fonts/Canela-Light.otf);
+}
+
+@font-face {
+	font-family: canela-regular;
+    src: url(../fonts/Canela-Regular.otf);
+}
+
+::selection {
+    color: white;
+    background: #ff6699;
+}
+
+body {
+	margin-top: 5rem;
+	font-family: gteesti-light, helvetica, sans-serif;
+	font-size: 4rem;
+	line-height: 5rem;
+	color: black;
+}
+
+.container {
+  max-width: 1300px;
+}
+
+h1, h2, h3, a, button {
+	font-family: canela-light, times, serif;
+	font-size: 3.9rem;
+	letter-spacing: 0.05rem;
+}
+
+h1 {
+	padding: 10rem 0 0;
+	margin-bottom: 0;
+}
+
+h2 {
+	margin-bottom: 3rem;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+a:hover {
+	color: #ff6699;
+}
+
+p {
+	margin-bottom: 5rem;
+}
+
+#p-space-below {
+	margin-bottom: 3rem;
+}
+
+.p-italic {
+	font-family: gteesti-light-italic;
+}
+
+.caption {
+	font-family: gteesti-regular;
+	font-size: 1.7rem;
+	line-height: 2.1rem;
+	text-align: center;
+	margin-bottom: 0.5rem;
+	margin-top: 5rem;
+}
+
+ul {
+	list-style-type: none;
+    padding: 0;
+}
+
+li {
+	margin-bottom: 1.3rem;
+	padding-left: 4.6rem;
+	text-indent: -4.6rem;
+}
+
+li:before {
+	content: "—";
+}
+
+li:last-child {
+	margin-bottom: 0;
+}
+
+.list-group p {
+	margin-bottom: 0rem;
+}
+
+.list-group  ul {
+	margin-bottom: 3rem;
+}
+
+.list-group  li {
+	margin-bottom: 0rem;
+}
+
+span {
+	font-family: canela, times, serif;
+}    
+
+hr {
+	border-width: 0.2rem;
+	border-style: solid;
+	border-color: black;
+	margin-top: 20rem;
+	margin-bottom: 3rem;
+}
+
+img {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+.p-img {
+	height: 3rem;
+	padding: 0 1rem;	
+}
+
+.img-section {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+}
+
+.img-section img {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.contact-info {
+	margin-top: 5rem;
+	padding-bottom: 20rem;
+}
+
+.u-full-width {
+	margin: 30rem 0;
+}
+
+#arrow {
+	height: 3rem;
+	position: fixed;
+	padding: 0;
+	z-index: 1000;
+	transition: fill 0.3s ease;
+
+}
+
+#arrow:hover {
+	fill: #ff6699
+}
+
+footer {
+	margin-top: 20rem;
+	border-top: 0.4rem solid black;
+	border-bottom: none;
+}
+
+footer p {
+		margin-bottom: 0rem;
+}
+
+footer li {
+	margin-bottom: 0;
+}
+
+footer hr {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	margin-top: 0rem;
+	margin-bottom: 3rem;
+}
+
+footer .about-space-below {
+	margin-bottom: 3rem;
+}
+
+#footer {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+
+/* Tables
+================================================== */
+.table {
+	margin: 20rem 0;
+	border-bottom: 0.4rem solid black;
+}
+
+.table h1 {
+	padding: 0;
+}
+
+.table .list-optical-align {
+	padding-left: 4.6rem;
+}
+
+.table p {
+	margin-bottom: 0;
+}
+
+.table ul {
+	margin-bottom: 0;
+}
+
+.table .row {
+	padding: 3rem 0;
+	border-bottom: 0.1rem solid black;
+}
+
+.table .row:last-child {
+	border-bottom: 0px;
+}
+
+.table .table-titles-min {
+	display: none;
+}
+	
+
+
+/* Collapsibles
+================================================== */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+	cursor: default;
+	padding: 0 0 2rem 0;
+	margin-bottom: 5rem;
+	border: none;
+	border-bottom: 0.2rem solid black;
+	width: 100%;  
+	text-align: left;
+	outline: none;  
+	background-color: transparent;
+}
+
+.collapsible:after {
+  content: '(click for more)'; 
+/*   margin-left: 5px; */
+}
+
+/* Change text colour of the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+	color: #ff6699;
+	transition: color 0.3s ease;
+}
+
+.active:after {
+	content: '(click for less)'; 
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+
+
+/* Media Queries
+================================================== */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	body {
+		font-size: 3rem;
+		line-height: 3.8rem;
+	}
+
+	h1, h2, a, button {
+		font-size: 2.9rem;
+		letter-spacing: 0.05rem;
+	}
+	
+	h1 {
+		padding-top: 10rem;
+		line-height: 3.8rem;
+	}
+	
+	h2 {
+		margin-bottom: 2rem;
+	}
+	
+	p {
+		margin-bottom: 2.8rem;
+	}
+	
+	#p-space-below {
+		margin-bottom: 2rem;
+	}
+
+	.p-img {
+		height: 2rem;
+	}
+	
+	.img-section {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	
+	li {
+		padding-left: 3.6rem;
+		text-indent: -3.6rem;
+	}
+	
+	.list-group p {
+		margin-bottom: 0rem;
+	}
+	
+	.list-group ul {
+		margin-bottom: 2rem;
+	}
+	
+	.list-group li {
+		margin-bottom: 0rem;
+	}
+	
+	#arrow {
+		height: 2.2rem;
+	}
+	
+	hr {
+		margin-top: 20rem;
+	}
+	
+	footer .about-space-below {
+		margin-bottom: 2.5rem;
+	}
+	
+	/* Tables */
+	.table {
+		margin: 10rem 0;
+	}
+	
+	.table .list-optical-align {
+		padding-left: 3.6rem;
+	}
+	
+	.table .row {
+		padding: 2.5rem 0;
+	}
+}		
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {
+		margin-top: 3rem;
+		font-size: 2.5rem;
+		line-height: 3.4rem;
+	}
+	
+	h1 {
+		padding-top: 5rem;
+		line-height: 3.6rem;
+	}
+	
+	h1, h2, a, button {
+		font-size: 2.45rem;
+		letter-spacing: 0.05rem;
+	}
+	
+	h2 {
+		margin-bottom: 1.5rem;
+	}
+		
+	p {
+		margin-bottom: 3.7rem;
+	}
+	
+	#p-space-below {
+		margin-bottom: 1.5rem;
+	}
+
+	ul {
+		margin-bottom: 3rem;
+	}
+	
+	li {
+		padding-left: 3.07rem;
+		text-indent: -3.07rem;
+	}
+	
+	.list-group p {
+		margin-bottom: 0rem;
+	}
+	
+	.list-group ul {
+		margin-bottom: 1.5rem;
+	}
+	
+	.list-group li {
+		margin-bottom: 0rem;
+	}
+	
+	img {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.img-section {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	.contact-info {
+		margin-top: 3rem;
+		padding-bottom: 10rem;
+	}
+	
+	.p-img {
+		height: 1.8rem;
+	}
+	
+	#arrow{
+		height: 1.9rem;
+	}
+	
+	hr {
+		border-width: 0.1rem;
+		margin-top: 15rem;
+		margin-bottom: 1rem;
+	}
+	
+	footer .about-space-below {
+		margin-bottom: 2.3rem;
+	}
+	
+	/* Tables */
+	.table {
+		margin: 10rem 0;
+	}
+	
+	.table .list-optical-align {
+		padding-left: 3.07rem;
+	}
+	
+	.table .row {
+		padding: 2.3rem 0;
+	}
+	
+	.table .row .five p {
+		margin-bottom: 1.3rem;
+	}
+}
+
+
+/* Show and hide table column headings at single-column break point */
+@media only screen and (max-width: 599px) {
+	.table .table-titles-full {
+		display: none;
+	}
+	
+	.table .table-titles-min {
+		display: inherit;
+	}
+	
+	.app-screen-reduce img{
+		width: 65%;
+		height: auto;
+		display: block;
+		margin: auto;
+		padding-bottom: 3rem;
+	}
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+	body {
+		font-family: gteesti-regular, helvetica, sans-serif;
+		font-size: 2rem;
+		line-height: 2.8rem;	
+		margin-top: 3rem;
+	}
+	
+	h1, h2, h3, a, button {
+		font-family: canela-regular, times, serif;
+	}
+	
+	h1 {
+		padding-top: 5rem;
+		line-height: 2.9rem;	
+
+	}
+	
+	h1, h2, a, button {
+		font-size: 1.95rem;
+		letter-spacing: 0.02rem;
+	}
+	
+	h2 {
+		margin-bottom: 1.5rem;
+	}
+	
+	p {
+		margin-bottom: 3rem;
+	}
+	
+	#p-space-below {
+		margin-bottom: 1.5rem;
+	}
+
+	ul {
+		margin-bottom: 3rem;
+	}
+	
+	li {
+		padding-left: 2.5rem;
+		text-indent: -2.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	img {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+	
+	.list-group p {
+		margin-bottom: 0rem;
+	}
+	
+	.list-group ul {
+		margin-bottom: 1.5rem;
+	}
+	
+	.list-group li {
+		margin-bottom: 0rem;
+	}
+
+	.img-section {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	.contact-info {
+		margin-top: 3rem;
+		padding-bottom: 10rem;
+	}
+
+	.p-img {
+		height: 1.7rem;
+	}
+	
+	#arrow{
+		height: 1.7rem;
+	}
+	
+	hr {
+		border-width: 0.1rem;
+		margin-top: 15rem;
+		margin-bottom: 1rem;
+	}
+	
+	footer .about-space-below {
+		margin-bottom: 2rem;
+	}
+
+	/* Tables */
+	.table {
+		margin: 12rem 0;
+	}
+	
+	.table .list-optical-align {
+		padding-left: 0rem;
+	}
+	
+	.table .row {
+		padding: 2rem 0;
+	}
+	
+	.table .row .five p {
+		margin-bottom: 1rem;
+	}
+}
+
+
