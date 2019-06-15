@@ -35,8 +35,9 @@ body {
 	font-family: gteesti-light, helvetica, sans-serif;
 	font-size: 4rem;
 	line-height: 5rem;
-	color: black;
+	color: white;
 	overflow-x: hidden;
+	background-color: black;
 }
 
 .container {
@@ -59,7 +60,7 @@ h2 {
 }
 
 a {
-	color: black;
+	color: white;
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
@@ -167,7 +168,7 @@ img {
 	padding: 0;
 	z-index: 1000;
 	transition: fill 0.3s ease;
-
+	fill: white;
 }
 
 #arrow:hover {
@@ -210,7 +211,7 @@ footer .about-space-below {
 ================================================== */
 .table {
 	margin: 20rem 0;
-	border-bottom: 0.4rem solid black;
+	border-bottom: 0.4rem solid white;
 }
 
 .table h1 {
@@ -231,7 +232,7 @@ footer .about-space-below {
 
 .table .row {
 	padding: 3rem 0;
-	border-bottom: 0.1rem solid black;
+	border-bottom: 0.1rem solid white;
 }
 
 .table .row:last-child {
@@ -253,7 +254,7 @@ footer .about-space-below {
 	padding: 0 0 2rem 0;
 	margin-bottom: 5rem;
 	border: none;
-	border-bottom: 0.2rem solid black;
+	border-bottom: 0.2rem solid white;
 	width: 100%;  
 	text-align: left;
 	outline: none;  
@@ -277,7 +278,8 @@ footer .about-space-below {
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-	background-color: white;
+	background-color: black;
+	color: white;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.5s ease;
