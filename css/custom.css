@@ -101,6 +101,15 @@ a:hover {
 	border-bottom: 1px solid transparent;	
 }
 
+#alt-link {
+	transition: color 0.3s ease;
+
+}
+
+#alt-link:hover {
+	color: white;
+}
+
 p {
 	margin-bottom: 4%;
 }
