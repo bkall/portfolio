@@ -250,7 +250,7 @@
 		  				<li><a href="mailto:brian@briankall.ca">brian@</a>briankall.ca</li>
 						<li><a href="https://www.linkedin.com/in/bkall" target="_blank">LinkedIn</a></li>
 						<li><a href="https://vimeo.com/user8645681" target="_blank">Vimeo</a></li>
-						<li><a href="http://briankall.ca/alt" target="_blank">Alternate</a></li>
+						<li><a id="alt-link" href="http://briankall.ca/alt" target="_blank">Alternate</a></li>
 		  			</ul>
 		  		</div>
 	  		</div>
@@ -313,6 +313,16 @@
 		$('#ysdn2017-hover1, #ysdn2017-hover2').hover(
 			function() {
 				$('#body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+				}, function() {
+				// on mouseout, reset the background colour
+				$('#body').stop().animate({backgroundColor:''}, 300);
+			});
+	});
+	
+	$(function() {
+		$('#alt-link').hover(
+			function() {
+				$('#body').stop().animate({backgroundColor:'black'}, 300);
 				}, function() {
 				// on mouseout, reset the background colour
 				$('#body').stop().animate({backgroundColor:''}, 300);
