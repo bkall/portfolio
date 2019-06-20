@@ -38,7 +38,7 @@ body {
 	color: white;
 	overflow-x: hidden;
 	background-color: black;
-	cursor: url(../images/misc/cursor-normal.png), auto;
+	cursor: url(../images/misc/cursor-normal-alt.png), auto;
 }
 
 .container {
@@ -68,7 +68,7 @@ a {
 
 a:hover {
 	color: #ff6699;
-	cursor: url(../images/misc/cursor-normal.png), auto;
+	cursor: url(../images/misc/cursor-normal-alt.png), auto;
 }
 
 #arrow-main {
@@ -262,7 +262,7 @@ footer .about-space-below {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-	cursor: url(../images/misc/cursor-normal.png), auto;
+	cursor: url(../images/misc/cursor-normal-alt.png), auto;
 	padding: 0 0 2rem 0;
 	margin-bottom: 5rem;
 	border: none;
