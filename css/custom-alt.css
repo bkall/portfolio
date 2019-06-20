@@ -38,6 +38,7 @@ body {
 	color: white;
 	overflow-x: hidden;
 	background-color: black;
+	cursor: url(../images/misc/cursor-normal.png), auto;
 }
 
 .container {
@@ -67,6 +68,17 @@ a {
 
 a:hover {
 	color: #ff6699;
+	cursor: url(../images/misc/cursor-normal.png), auto;
+}
+
+#arrow-main {
+	height: 3rem;
+	fill: white;
+	transition: fill 0.3s ease;
+}
+
+#arrow-main:hover {
+	fill: #ff6699;
 }
 
 p {
@@ -155,7 +167,7 @@ img {
 
 .contact-info {
 	margin-top: 5rem;
-	padding-bottom: 20rem;
+/* 	padding-bottom: 20rem; */
 }
 
 .u-full-width {
@@ -172,7 +184,7 @@ img {
 }
 
 #arrow:hover {
-	fill: #ff6699
+	fill: #ff6699;
 }
 
 footer {
@@ -250,7 +262,7 @@ footer .about-space-below {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-	cursor: default;
+	cursor: url(../images/misc/cursor-normal.png), auto;
 	padding: 0 0 2rem 0;
 	margin-bottom: 5rem;
 	border: none;
@@ -349,6 +361,10 @@ footer .about-space-below {
 		height: 2.2rem;
 	}
 	
+	#arrow-main {
+		height: 2.6rem;
+	}
+	
 	hr {
 		margin-top: 20rem;
 	}
@@ -435,7 +451,7 @@ footer .about-space-below {
 
 	.contact-info {
 		margin-top: 3rem;
-		padding-bottom: 10rem;
+/* 		padding-bottom: 10rem; */
 	}
 	
 	.p-img {
@@ -444,6 +460,10 @@ footer .about-space-below {
 	
 	#arrow{
 		height: 1.9rem;
+	}
+	
+	#arrow-main {
+		height: 2.2rem;
 	}
 	
 	hr {
@@ -566,7 +586,7 @@ footer .about-space-below {
 
 	.contact-info {
 		margin-top: 3rem;
-		padding-bottom: 10rem;
+/* 		padding-bottom: 10rem; */
 	}
 
 	.p-img {
@@ -575,6 +595,10 @@ footer .about-space-below {
 	
 	#arrow{
 		height: 1.7rem;
+	}
+	
+	#arrow-main {
+		height: 1.9rem;
 	}
 	
 	hr {
