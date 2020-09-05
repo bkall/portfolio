@@ -49,12 +49,13 @@ body {
 	overflow-x: hidden;
 }
 
-#bokehsite-body {background-color: rgba(222,201,120,0.3);}
-#motionreel-body {background-color: rgba(200,241,252,0.5);}
-#xplor-body {background-color: rgba(193,244,227,0.5);}
-#ralf-body {background-color: rgba(252,210,190,0.4);}
-#darwin-body {background-color: rgba(219,224,228,0.5);}
-#ysdn2017-body {background-color: rgba(255,230,236,0.7)}
+#uniqlo-body {background-color: #FFE3E3;}
+#bokehsite-body {background-color: #F5EED6;}
+#motionreel-body {background-color: #DEF7FE;}
+#xplor-body {background-color: #DAF8EE;}
+#ralf-body {background-color: #FEE3D1;}
+#darwin-body {background-color: #EDEFF1;}
+#ysdn2017-body {background-color: #F4E5FE}
 
 .container {
 	max-width: 1100px;
@@ -152,13 +153,13 @@ img {
 	padding-bottom: 1rem;
 }
 
-.caption {
+.caption-center, .caption {
 	font-family: gteesti-regular;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	line-height: 2.1rem;
 	text-align: center;
 	margin-bottom: 0.5rem;
-	margin-top: 5rem;
+	margin-top: 0rem;
 }
 
 ul {
