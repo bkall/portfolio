@@ -873,11 +873,12 @@
 	  		<div class="row" style="border-top: 0.4rem solid black">
 		  		<div class="twelve columns">
 		  			<ul>
+		  				<li><a id="uniqlo-navhover" href="uniqlo.html">Uniqlo Canada<img class="nav-img" src="../images/nav/uniqlo-nav.jpg"></a></li>
 		  				<li><a id="bokehsite-navhover" href="bokehsite.html">Bokeh Collective Website<img class="nav-img" src="../images/nav/bokehsite-nav.jpg"></a></li>
 		  				<li><a id="motionreel-navhover" href="motionreel.html">Motion Design Reel<img class="nav-img" src="../images/nav/motionreel-nav.jpg"></a></li>
-		  				<li><a id="xplor-navhover" href="xplor.html">Xplor<img class="nav-img" src="../images/nav/xplor-nav.jpg"></a></li>
+<!-- 		  				<li><a id="xplor-navhover" href="xplor.html">Xplor<img class="nav-img" src="../images/nav/xplor-nav.jpg"></a></li> -->
 		  				<li><a id="ralf-navhover" href="ralf.html">Ralf<img class="nav-img" src="../images/nav/ralf-nav.jpg"></a></li>
-		  				<li><a id="darwin-navhover" href="darwin.html">Darwin<img class="nav-img" src="../images/nav/darwin-nav.jpg"></a></li>
+<!--		  				<li><a id="darwin-navhover" href="darwin.html">Darwin<img class="nav-img" src="../images/nav/darwin-nav.jpg"></a></li>-->
 		  				<li>YSDN2017<img class="nav-img" src="../images/nav/ysdn2017-nav.jpg"></li>
 		  			</ul>
 		  		</div>
@@ -920,74 +921,82 @@
 		$(function() {
 			$('#arrow').hover(
 				function() {
-					$('#ysdn2017-body').stop().animate({backgroundColor:'white'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#FFFFFF'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 				});
 		});
 		
+        $(function() {
+			$('#uniqlo-navhover').hover(
+				function() {
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#FFE3E3'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
+				});
+		});
+        
 		$(function() {
 			$('#bokehsite-navhover').hover(
 				function() {
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(222,201,120,0.3)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F5EED6'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 				});
 		});
 		
 		$(function() {
 			$('#motionreel-navhover').hover(
 				function() {
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(200,241,252,0.5)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#DEF7FE'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 				});
 		});
 		
 		$(function() {
 			$('#xplor-navhover').hover(
 				function() {
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(193,244,227,0.5)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#DAF8EE'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 				});
 		});
 		
 		$(function() {
 			$('#ralf-navhover').hover(
 				function() {
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(252,210,190,0.4)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#FEE3D1'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 				});
 		});
 		
 		$(function() {
 			$('#darwin-navhover').hover(
 				function() {
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#EDEFF1)'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 				});
 		});
 		
-		/*
-$(function() {
+		$(function() {
 			$('#ysdn2017-navhover').hover(
 				function() {
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(255,230,236,0.7)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
-					$('#ysdn2017-body').stop().animate({backgroundColor:'rgba(219,224,228,0.5)'}, 300);
+					$('#ysdn2017-body').stop().animate({backgroundColor:'#F4E5FE'}, 300);
 				});
 		});
-*/
 	</script>	
 	
 	
