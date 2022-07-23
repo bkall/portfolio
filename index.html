@@ -44,7 +44,7 @@
 				<div class="ten columns">
 					<p>Brian Kall is a designer living in Toronto, Canada. He is a 2017 graduate of the <a href="http://design.ampd.yorku.ca/" target="_blank">York/Sheridan Program in Design</a> and holds a Bachelor of Applied Science in Civil Engineering from the <a href="https://engineering.uottawa.ca/" target="_blank">University of Ottawa</a>.
 					</p>
-					<p>He is currently a graphic designer with <a href="https://www.tonal.com/" target="_blank">Tonal</a> and was previously a graphic designer at <a href="https://www.uniqlo.ca/" target="_blank">Uniqlo Canada</a>.
+					<p>He was most recently a Senior Graphic Designer with <a href="https://www.tonal.com/" target="_blank">Tonal</a> and is currently open to new opportunities.
 					</p>
 				</div>
 			</div>
@@ -53,13 +53,12 @@
 					<p>
 						<span>&mdash;</span><a href="mailto:brian@briankall.ca">brian@</a>briankall.ca<br>
 						<span>&mdash;</span><a href="https://www.linkedin.com/in/bkall" target="_blank">LinkedIn</a><br>
-						<span>&mdash;</span><a href="https://vimeo.com/user8645681" target="_blank">Vimeo</a><br>
 					</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="offset-by-one column">
-					<a id="a-no-underline" href="index.html#uniqlo">
+					<a id="a-no-underline" href="index.html#tonal">
 						<svg version="1.1" id="arrow-main" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 104.1 118.8" enable-background="new 0 0 104.1 118.8" xml:space="preserve">
 	<g><defs><path id="SVGID_1_" d="M46.6,87.9V0h10.9v87.9c0,4.6-0.5,9.3-1.7,13.7l0.4,0.2c1.5-2.5,3.5-5,5.8-7.3L96,61l8.1,8.1L52,118.8 L0,69.1L8.1,61l34,33.5c2.3,2.3,4.3,4.8,5.8,7.3l0.3-0.2C47.1,97.2,46.6,92.5,46.6,87.9z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_"  overflow="visible"/></clipPath><rect x="-5" y="-5" clip-path="url(#SVGID_2_)" width="114.1" height="128.8"/></g></svg>
 					</a>
@@ -70,6 +69,28 @@
 	
 	<div class="container">
 		
+<!-- Tonal
+––––––––––––––––––––––––––––––––––––––––––––––––––-->
+		<div class="row" id="tonal">
+			<div class="offset-by-one column">
+				<h1>
+					<span>&mdash;</span>Tonal
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="eight columns">
+				<p class="main-p">Coming soon.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="offset-by-one column">
+				<div class="ten columns">
+					<img class="main-img u-max-full-width" id="tonal-hover2" src="images/main/tonal-main.jpg">
+				</div>
+			</div>
+		</div>
+
 		
 <!-- Uniqlo
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
@@ -248,7 +269,7 @@
 		  			<p>Currently watching:</p>
 		  			<div class="offset-by-one column">
 			  			<ul>
-			  				<li><a href="https://rottentomatoes.com/tv/buffy-the-vampire-slayer" target="_blank">Buffy the Vampire Slayer</a></li>
+			  				<li><a href="https://www.rottentomatoes.com/tv/stranger_things" target="_blank">Stranger Things</a></li>
 			  			</ul>
 		  			</div>
 		  		</div>
@@ -260,8 +281,8 @@
 		  			<p>Currently reading:</p>
 		  			<div class="offset-by-one column">
 			  			<ul>
-			  				<li><a href="https://www.goodreads.com/book/show/45186565-uncanny-valley" target="_blank">Uncanny Valley</a> by Anna Wiener</li>
-			  				<li><a href="https://www.goodreads.com/book/show/74034.Amusing_Ourselves_to_Death" target="_blank">Amusing Ourselves to Death</a> by Neil Postman</li>
+			  				<li><a href="https://www.goodreads.com/book/show/12497.No_Country_for_Old_Men" target="_blank">No Country for Old Men</a> by Cormac McCarthy</li>
+			  				<li><a href="https://www.goodreads.com/book/show/41880609-on-earth-we-re-briefly-gorgeous" target="_blank">On Earth We're Briefly Gorgeous</a> by Ocean Vuong</li>
 			  			</ul>
 		  			</div>
 		  		</div>
@@ -282,6 +303,16 @@
 
 <!-- jQuery scripts for colour hover changes -->
 	<script>
+	$(function() {
+		$('#tonal-hover1, #tonal-hover2').hover(
+			function() {
+				$('#body').stop().animate({backgroundColor:'hex(#DCFAF6)'}, 300);
+				}, function() {
+				// on mouseout, reset the background colour
+				$('#body').stop().animate({backgroundColor:''}, 300);
+			});
+	});
+		
 	$(function() {
 		$('#uniqlo-hover1, #uniqlo-hover2').hover(
 			function() {
@@ -313,29 +344,9 @@
 	});
 	
 	$(function() {
-		$('#xplor-hover1, #xplor-hover2').hover(
-			function() {
-				$('#body').stop().animate({backgroundColor:'hex(#DAF8EE)'}, 300);
-				}, function() {
-				// on mouseout, reset the background colour
-				$('#body').stop().animate({backgroundColor:''}, 300);
-			});
-	});
-	
-	$(function() {
 		$('#ralf-hover1, #ralf-hover2').hover(
 			function() {
 				$('#body').stop().animate({backgroundColor:'hex(#FEE9DF)'}, 300);
-				}, function() {
-				// on mouseout, reset the background colour
-				$('#body').stop().animate({backgroundColor:''}, 300);
-			});
-	});
-	
-	$(function() {
-		$('#darwin-hover1, #darwin-hover2').hover(
-			function() {
-				$('#body').stop().animate({backgroundColor:'hex(#EDEFF1)'}, 300);
 				}, function() {
 				// on mouseout, reset the background colour
 				$('#body').stop().animate({backgroundColor:''}, 300);
