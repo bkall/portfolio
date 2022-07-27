@@ -242,7 +242,8 @@
 	  		<div class="row" style="border-top: 0.4rem solid black">
 		  		<div class="twelve columns">
 		  			<ul>
-		  				<li>Uniqlo Canada<img class="nav-img" src="../images/nav/uniqlo-nav.jpg"></li>
+		  				<li><a id="tonal-navhover" href="tonal.html">Tonal<img class="nav-img" src="../images/nav/tonal-nav.jpg"></a></li>
+						<li>Uniqlo Canada<img class="nav-img" src="../images/nav/uniqlo-nav.jpg"></li>
 		  				<li><a id="bokehsite-navhover" href="bokehsite.html">Bokeh Collective Website<img class="nav-img" src="../images/nav/bokehsite-nav.jpg"></a></li>
 		  				<li><a id="motionreel-navhover" href="motionreel.html">Motion Design Reel<img class="nav-img" src="../images/nav/motionreel-nav.jpg"></a></li>
 		  				<!-- <li><a id="xplor-navhover" href="xplor.html">Xplor<img class="nav-img" src="../images/nav/xplor-nav.jpg"></a></li> -->
@@ -257,7 +258,6 @@
 	  				<ul>
 						<li><a href="mailto:brian@briankall.ca">brian@</a>briankall.ca</li>
 						<li><a href="https://www.linkedin.com/in/bkall" target="_blank">LinkedIn</a></li>
-						<li><a href="https://vimeo.com/user8645681" target="_blank">Vimeo</a></li>
 						<li><a href="http://briankall.ca/alt" target="_blank">Alternate</a></li>
 					</ul>
 	  			</div>
@@ -271,6 +271,16 @@
 			$('#arrow').hover(
 				function() {
 					$('#uniqlo-body').stop().animate({backgroundColor:'#FFFFFF'}, 300);
+					}, function() {
+					// on mouseout, reset the background colour
+					$('#uniqlo-body').stop().animate({backgroundColor:'#FFE3E3'}, 300);
+				});
+		});
+		
+		$(function() {
+			$('#tonal-navhover').hover(
+				function() {
+					$('#uniqlo-body').stop().animate({backgroundColor:'#DCFAF6'}, 300);
 					}, function() {
 					// on mouseout, reset the background colour
 					$('#uniqlo-body').stop().animate({backgroundColor:'#FFE3E3'}, 300);
