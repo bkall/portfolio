@@ -49,6 +49,7 @@ body {
 	overflow-x: hidden;
 }
 
+#tonal-body {background-color: #DCFAF6;}
 #uniqlo-body {background-color: #FFE3E3;}
 #bokehsite-body {background-color: #F5EED6;}
 #motionreel-body {background-color: #DEF7FE;}
@@ -153,7 +154,16 @@ img {
 	padding-bottom: 1rem;
 }
 
-.caption-center, .caption {
+.caption {
+	font-family: gteesti-regular;
+	font-size: 1.5rem;
+	line-height: 2.1rem;
+	text-align: left;
+	margin-bottom: 0.5rem;
+	margin-top: 0rem;
+}
+
+.caption-center {
 	font-family: gteesti-regular;
 	font-size: 1.5rem;
 	line-height: 2.1rem;
